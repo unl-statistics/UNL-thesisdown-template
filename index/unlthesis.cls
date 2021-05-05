@@ -209,8 +209,17 @@
 \let\@normalsize\normalsize  % retain old definition
 \setlength\abovecaptionskip{10\p@}
 \setlength\belowcaptionskip{10\p@}
-
-
+%
+%  ----  Text Colors  ------------------------------------------
+%
+% Assign colors to writers for review
+%
+\usepackage[dvipsnames]{xcolor} % colors
+\newcommand{\authorcol}[1]{{\textcolor{blue}{#1}}}
+\newcommand{\chaircol}[1]{{\textcolor{RedOrange}{#1}}}
+\newcommand{\cochaircol}[1]{{\textcolor{Green}{#1}}}
+%
+%
 %
 %  ----  Footnotes  ------------------------------------------
 %
