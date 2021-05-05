@@ -14,7 +14,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}R chunks}{5}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Inline code}{5}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Inline code}{6}{section.2.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}Including plots}{6}{section.2.5}%
 \defcounter {refsection}{0}\relax 

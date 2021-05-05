@@ -4,7 +4,7 @@ title: "HUMAN PERCEPTION OF EXPONENTIALLY INCREASING DATA DISPLAYED ON A LOG SCA
 author: "Emily Anna Robinson"
 month: "August"
 year: "2022"
-location: "Lincoln, NE"
+location: "Lincoln, Nebraska"
 program: "Statistics"
 chair: "Susan VanderPlas and Reka Howard"
 chairtitle: 
@@ -20,9 +20,9 @@ dedication:
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 
-  huskydown::thesis_pdf: 
-    latex_engine: xelatex
-#  huskydown::thesis_gitbook: default
+  # huskydown::thesis_pdf: 
+    # latex_engine: xelatex
+ huskydown::thesis_gitbook: default
 #  huskydown::thesis_word: default
 #  huskydown::thesis_epub: default
 bibliography: bib/thesis.bib

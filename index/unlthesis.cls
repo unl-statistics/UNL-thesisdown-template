@@ -169,7 +169,7 @@
 \headsep 36\p@
 \oddsidemargin 108\p@
 \ifproquest\oddsidemargin 72\p@\fi
-\oddsidemargin 72\p@
+\oddsidemargin 108\p@
 \evensidemargin 72\p@
 \newdimen\botmargin
 \botmargin 72\p@
@@ -180,19 +180,20 @@
 \parindent 1.5em
 
 \textheight\paperheight
-  \advance\textheight by-\topmargin
-  \advance\textheight by-\headheight
-  \advance\textheight by-\headsep
-  % \advance\textheight by-\footskip
-  \advance\textheight by-\botmargin
+\advance\textheight by-\topmargin
+\advance\textheight by-\headheight
+\advance\textheight by-\headsep
+\advance\textheight by-\footskip
+\advance\textheight by-\botmargin
+\raggedright
 \textwidth\paperwidth
-  \advance\textwidth by-\oddsidemargin
-  \advance\textwidth by-\evensidemargin
+\advance\textwidth by-\oddsidemargin
+\advance\textwidth by-\evensidemargin
 
 % ---------------
 
 % set most text to 'double' space
-%\def\baselinestretch{1.5}    % not quite doublespaced
+% \def\baselinestretch{1.5}    % not quite doublespaced
 \def\baselinestretch{2.0}\large\normalsize
 
 % make it easier to switch to single-space lines in figures, tables, ...
@@ -749,11 +750,10 @@
    \begin{center}
       {\bf\@textofAbstract}%
       \par\vskip1pc
-      {\unlsinglespace \@Title \par
+      {\unlsinglespace \@Title \par}
       \@Author , \space \@Titletext \par
       \@School , \space \@Year \par
       \@textofChair \@Chair \par
-      }
       %  {\unlsinglespace
       % \@textofChair
       % \par
