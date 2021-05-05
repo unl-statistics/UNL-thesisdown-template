@@ -1,12 +1,11 @@
 ---
 # UNL thesis fields
-title: "THESIS TITLE IN ALL CAPS"
+title: "DISSERTATION TITLE IN ALL CAPS"
 author: "Author Full Name"
 month: "Month"
 year: "Year"
 location: "Lincoln, Nebraska"
 program: "Statistics"
-# See unlthesis.cls to adjust Professors to Professor and Advisors to Advisor if no co-chair.
 chair: "Chair and Co-chair"
 chairtitle: 
 signature1: 
@@ -30,8 +29,8 @@ bibliography: bib/thesis.bib
 # Download your specific bibliography database file and refer to it in the line above.
 csl: csl/apa.csl
 # Download your specific csl file and refer to it in the line above.
-lot: false
-lof: false
+lot: true
+lof: true
 # space_between_paragraphs: true
 # Delete the # at the beginning of the previous line if you'd like
 # to have a blank new line between each paragraph
