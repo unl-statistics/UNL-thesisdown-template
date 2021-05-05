@@ -1,36 +1,37 @@
 ---
 # UNL thesis fields
-title: "HUMAN PERCEPTION OF EXPONENTIALLY INCREASING DATA DISPLAYED ON A LOG SCALE"
-author: "Emily Anna Robinson"
-month: "August"
-year: "2022"
+title: "THESIS TITLE IN ALL CAPS"
+author: "Author Full Name"
+month: "Month"
+year: "Year"
 location: "Lincoln, Nebraska"
 program: "Statistics"
-chair: "Susan VanderPlas and Reka Howard"
+# See unlthesis.cls to adjust Professors to Professor and Advisors to Advisor if no co-chair.
+chair: "Chair and Co-chair"
 chairtitle: 
 signature1: 
 signature2: 
 signature3: 
 abstract: |
-  "Here is my abstract"
+  Here is my abstract. *(350 word limit)*
 acknowledgments: |
-  "My acknowledgments"
+  Thank you to all my people!
 dedication: 
 # End of UNL thesis fields
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 
-  # huskydown::thesis_pdf: 
-    # latex_engine: xelatex
- huskydown::thesis_gitbook: default
+  huskydown::thesis_pdf:
+    latex_engine: xelatex
+ # huskydown::thesis_gitbook: default
 #  huskydown::thesis_word: default
 #  huskydown::thesis_epub: default
 bibliography: bib/thesis.bib
 # Download your specific bibliography database file and refer to it in the line above.
 csl: csl/apa.csl
 # Download your specific csl file and refer to it in the line above.
-lot: true
-lof: true
+lot: false
+lof: false
 # space_between_paragraphs: true
 # Delete the # at the beginning of the previous line if you'd like
 # to have a blank new line between each paragraph
