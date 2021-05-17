@@ -1,0 +1,253 @@
+% From https://github.com/UWIT-IAM/UWThesis
+\documentclass[print]{nuthesis}
+\usepackage{amssymb, amsthm, amsmath, amsfonts}
+\usepackage{wasysym}
+\usepackage{mathrsfs}
+% \usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{lineno}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{listings}
+%\usepackage{breqn}
+\usepackage{cancel, enumerate}
+\usepackage{rotating, environ}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+\usepackage{dirtree}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Syntax highlighting #22
+$if(highlighting-macros)$
+  $highlighting-macros$
+$endif$
+
+%% https://github.com/rstudio/rmarkdown/issues/1649
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{CSLReferences}%
+{\setlength{\parindent}{0pt}%
+\everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces}%
+{\par}
+
+% fix for pandoc 1.14
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%% something about tables, from https://github.com/ismayc/thesisdown/issues/122
+\usepackage{calc}
+
+%% for copyright symbol
+\usepackage{textcomp}
+
+%% to allow to rotate pages to landscape
+\usepackage{lscape}
+%% to adjust table column width
+\usepackage{tabularx}
+
+% suppress bottom page numbers on first page of each chapter
+% because they overlap with text
+\usepackage{etoolbox}
+\patchcmd{\chapter}{plain}{empty}{}{}
+
+%% for more attractive tables
+\usepackage{booktabs}
+\usepackage{longtable}
+
+
+\usepackage{graphicx}
+
+
+% Double spacing, if you want it.
+\def\dsp{\def\baselinestretch{2.0}\large\normalsize}
+% \dsp
+
+% If the Grad. Division insists that the first paragraph of a section
+% be indented (like the others), then include this line:
+\usepackage{indentfirst}
+
+%%%%%%%%%%%%%%%%%%
+% If you want to use "sections" to partition your thesis
+% un-comment the following:
+%
+\counterwithout{section}{chapter}
+\setsecnumdepth{subsubsection}
+\def\sectionmark#1{\markboth{#1}{#1}}
+\def\subsectionmark#1{\markboth{#1}{#1}}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\makeatletter
+\let\l@subsection\l@section
+\let\l@section\l@chapter
+\makeatother
+
+\renewcommand{\thetable}{\arabic{table}}
+\renewcommand{\thefigure}{\arabic{figure}}
+
+%%%%%%%%%%%%%%%%%%
+
+
+%% Stuff from https://github.com/suchow/Dissertate
+
+% The following line would print the thesis in a postscript font
+
+% \usepackage{natbib}
+% \def\bibpreamble{\protect\addcontentsline{toc}{chapter}{Bibliography}}
+
+\setcounter{tocdepth}{1} % Print the chapter and sections to the toc
+% controls depth of table of contents (toc): 0 = chapter, 1 = section, 2 = subsection
+
+\usepackage{natbib}
+
+
+% commands and environments needed by pandoc snippets
+% extracted from the output of `pandoc -s`
+%% Make R markdown code chunks work
+\usepackage{array}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifxetex
+  \usepackage{fontspec,xltxtra,xunicode}
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\else
+  \ifluatex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \else
+    \usepackage[utf8]{inputenc}
+  \fi
+\fi
+\usepackage{color}
+\usepackage{fancyvrb}
+
+
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex,
+              colorlinks=true,
+              linkcolor=blue]{hyperref}
+\else
+  \usepackage[unicode=true,
+              colorlinks=true,
+              linkcolor=blue]{hyperref}
+\fi
+\hypersetup{breaklinks=true, pdfborder={0 0 0}}
+\setlength{\parindent}{20pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{2} %% controls section numbering, e.g. 1 or 1.2, or 1.2.3
+
+
+\input{preamble.tex}
+
+\begin{document}
+% \linenumbers{}
+%% Start formatting the first few special pages
+%% frontmatter is needed to set the page numbering correctly
+\frontmatter
+%% from thesisdown
+% To pass between YAML and LaTeX the dollar signs are added by CII
+\title{$title$}
+\author{$author$}
+\adviser{$adviser$}
+\adviserAbstract{$adviserAbstract$}
+\major{$major$}
+\degreemonth{$month$}
+\degreeyear{$year$}
+% \copyrightpage
+%%
+%% For most people the defaults will be correct, so they are commented
+%% out. To manually set these, just uncomment and make the needed
+%% changes.
+%% \college{Your college}
+%% \city{Your City}
+%%
+%% For most people the following can be changed with a class
+%% option. To manually set these, just uncomment the following and
+%% make the needed changes.
+%% \doctype{Thesis or Dissertation}
+%% \degree{Your degree}
+%% \degreeabbreviation{Your degree abbr.}
+%%
+%% Now that we know everything we need, we can generate the title page
+%% itself.
+%%
+\maketitle
+
+\setcounter{page}{-1}
+
+\begin{abstract}
+    $abstract$
+\end{abstract}
+
+%% Optional
+%% \begin{copyrightpage}
+%% \end{copyrightpage}
+
+%% Optional
+\begin{dedication}
+$dedication$
+\end{dedication}
+
+%%%%%%%%%%%%%%%%%%%
+% Acknowledgments
+%%%%%%%%%%%%%%%%%%%
+\begin{acknowledgments}
+$acknowledgments$
+\end{acknowledgments}
+%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%
+% Grant Information
+%%%%%%%%%%%%%%%%%%%
+% \begin{grantinfo}
+%     % Add any grant info here
+% \end{grantinfo}
+
+%%%%%%%%%%%%%%%%%%%
+% ToC
+%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%
+% List of Figures
+%%%%%%%%%%%%%%%%%%%
+\listoffigures
+\listoftables
+
+%%%%%%%%%%%%%%%%%%%
+% Start of the document
+%%%%%%%%%%%%%%%%%%%
+\mainmatter
+
+
+$body$
+
+
+%% backmatter is needed at the end of the main body of your thesis to
+%% set up page numbering correctly for the remainder of the thesis
+\backmatter
+
+%% Start the correct formatting for the appendices
+% \appendix
+%% Input each appendix here
+% \input{./appendix_a}
+
+%% Bibliography goes here (You better have one)
+%% BibTeX is your friend
+
+% \bibliographystyle{alpha}  % or use  abbrv to abbreviate first names and use numerical indices
+\bibliographystyle{abbrv}  % or use  abbrv to abbreviate first names and use numerical indices
+%% Add your BibTex file here (don't include the .bib)
+\bibliography{./references}
+
+
+
+%% Index go here (if you have one)
+\end{document}
