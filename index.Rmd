@@ -27,7 +27,7 @@ output:
 #  huskydown::thesis_epub: default
 bibliography: bib/thesis.bib
 # Download your specific bibliography database file and refer to it in the line above.
-csl: csl/apa.csl
+csl: bib/apa.csl
 # Download your specific csl file and refer to it in the line above.
 lot: true
 lof: true
