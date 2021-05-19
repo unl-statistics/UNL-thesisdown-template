@@ -12,7 +12,8 @@ abstract: |
   Here is my abstract. *(350 word limit)*
 acknowledgments: |
   Thank you to all my people!
-dedication: 
+dedication: |
+  Dedicated to...
 # End of UNL thesis fields
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
@@ -76,7 +77,9 @@ library(huskydown)
 
 Editing text colors: \authorcol{Author's editing color. Use \expandafter\string\authorcol{}} Author may also use mostly black text as well. \chaircol{Chair's editing color. Use \expandafter\string\chaircol{}} \cochaircol{Co-chair's editing color. Use \expandafter\string\cochaircol{}} Redefine commands in unlthesis.cls with initials.
 
-Welcome to the _R Markdown_ thesis template. This template is based on (and in many places copied directly from) the UW LaTeX template, but hopefully it will provide a nicer interface for those that have never used TeX or LaTeX before. Using _R Markdown_ will also allow you to easily keep track of your analyses in **R** chunks of code, with the resulting plots and output included as well. The hope is this _R Markdown_ template gets you in the habit of doing reproducible research, which benefits you long-term as a researcher, but also will greatly help anyone that is trying to reproduce or build onto your results down the road.
+Welcome to the _R Markdown_ thesis template. This template is based on (and in many places copied directly from) the UW LaTeX template, and has been modified to use the UNL LaTeX thesis class maintained by the math department. Hopefully it will provide a nicer interface for those that have never used TeX or LaTeX before. 
+
+Using _R Markdown_ will also allow you to easily keep track of your analyses in **R** chunks of code, with the resulting plots and output included as well. The hope is this _R Markdown_ template gets you in the habit of doing reproducible research, which benefits you long-term as a researcher, but also will greatly help anyone that is trying to reproduce or build onto your results down the road.
 
 Hopefully, you won't have much of a learning period to go through and you will reap the benefits of a nicely formatted thesis. The use of LaTeX in combination with _Markdown_ is more consistent than the output of a word processor, much less prone to corruption or crashing, and the resulting file is smaller than a Word file. While you may have never had problems using Word in the past, your thesis is likely going to be at least twice as large and complex as anything you've written before, taxing Word's capabilities. After working with _Markdown_ and **R** together for a few weeks, we are confident this will be your reporting style of choice going forward.
 
