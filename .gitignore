@@ -2,6 +2,11 @@
 .Rhistory
 .RData
 .Ruserdata
-EmilyARobinson-UNL-dissertation.Rproj
-.Rproj
-UNL-thesisdown-template.Rproj
+*.Rproj
+*.bcf
+*.lof
+*.lot
+*.run.xml
+*.synctex.gz
+*.toc
+*.log
