@@ -19,6 +19,7 @@ knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 
   bookdown::pdf_book:
+    pandoc_args: --top-level-division=chapter
     keep_tex: yes
     latex_engine: xelatex
     template: template.tex
