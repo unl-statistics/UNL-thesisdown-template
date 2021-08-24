@@ -6,4 +6,5 @@
 
 Examples:
 
-+ Visit Emily A. Robinson (creator) dissertation bookdown file on GitHub [here](https://github.com/earobinson95/EmilyAnnaRobinson-UNL-dissertation)
++ Download Emily A. Robinson (creator) dissertation pdf file [here](https://github.com/earobinson95/EmilyARobinson-UNL-dissertation/raw/main/_book/thesis.pdf).
++ View Emily A. Robinson (creator) dissertation bookdown code on the GitHub repository [here](https://github.com/earobinson95/EmilyARobinson-UNL-dissertation)
