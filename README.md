@@ -5,7 +5,7 @@
 Template for writing your UNL thesis with bookdown.
 
 **To Use**
-1. Clone this repository to a new Rproject hosted on your computer.
+1. Fork this repository to a new Rproject hosted on your computer or download and exctract the repository as a .zip file and create a new Rproject within the folder.
 2. In RStudio, in the Environment/Git window pane, click on the **Build** tab. Then **Build Book.** This will take some time, especially for the first build. Let it go!
 3. Your thesis document can be found in at **_book/thesis.pdf**.
 
