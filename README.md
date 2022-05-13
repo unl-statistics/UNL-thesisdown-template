@@ -19,7 +19,7 @@ Template for writing your UNL thesis with bookdown.
 + University format guidelines: https://www.unl.edu/gradstudies/academics/degrees/guidelines/format#global
 
 **Examples**
-+ Download Emily A. Robinson (creator) dissertation pdf file [here](https://github.com/earobinson95/EmilyARobinson-UNL-dissertation/raw/main/_book/thesis.pdf).
++ Download Emily A. Robinson (creator) dissertation pdf file [here](https://earobinson95.github.io/EmilyARobinson-UNL-dissertation/thesis.pdf).
 + View Emily A. Robinson (creator) dissertation bookdown code on the GitHub repository [here](https://github.com/earobinson95/EmilyARobinson-UNL-dissertation)
 
 *If there are any adjustments or issues, you can contact me via my [contact form.](https://www.emilyarobinson.com/#contact)*

@@ -6,8 +6,7 @@ month: "Month"
 year: "Year"
 location: "Lincoln, Nebraska"
 major: "Statistics"
-advisor: "Chair and Co-chair"
-adviserAbstract: 
+adviser: "Advisor name"
 abstract: |
   Here is my abstract. *(350 word limit)*
 acknowledgments: |

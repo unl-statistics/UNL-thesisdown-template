@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>DISSERTATION TITLE IN ALL CAPS</title>
+  <meta name="description" content="DISSERTATION TITLE IN ALL CAPS" />
+  <meta name="generator" content="bookdown 0.24.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="DISSERTATION TITLE IN ALL CAPS" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="DISSERTATION TITLE IN ALL CAPS" />
+  
+  
+  
+
+<meta name="author" content="Author Full Name" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="2-rmd-basics.html"/>
+<style type="text/css">
+p.abstract{
+  text-align: center;
+  font-weight: bold;
+}
+div.abstract{
+  margin: auto;
+  width: 90%;
+}
+</style>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./"></a></li>
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction<span></span></a></li>
+<li class="chapter" data-level="2" data-path="2-rmd-basics.html"><a href="2-rmd-basics.html"><i class="fa fa-check"></i><b>2</b> R Markdown Basics<span></span></a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="2-rmd-basics.html"><a href="2-rmd-basics.html#lists"><i class="fa fa-check"></i><b>2.1</b> Lists<span></span></a></li>
+<li class="chapter" data-level="2.2" data-path="2-rmd-basics.html"><a href="2-rmd-basics.html#line-breaks"><i class="fa fa-check"></i><b>2.2</b> Line breaks<span></span></a></li>
+<li class="chapter" data-level="2.3" data-path="2-rmd-basics.html"><a href="2-rmd-basics.html#r-chunks"><i class="fa fa-check"></i><b>2.3</b> R chunks<span></span></a></li>
+<li class="chapter" data-level="2.4" data-path="2-rmd-basics.html"><a href="2-rmd-basics.html#inline-code"><i class="fa fa-check"></i><b>2.4</b> Inline code<span></span></a></li>
+<li class="chapter" data-level="2.5" data-path="2-rmd-basics.html"><a href="2-rmd-basics.html#including-plots"><i class="fa fa-check"></i><b>2.5</b> Including plots<span></span></a></li>
+<li class="chapter" data-level="2.6" data-path="2-rmd-basics.html"><a href="2-rmd-basics.html#loading-and-exploring-data"><i class="fa fa-check"></i><b>2.6</b> Loading and exploring data<span></span></a></li>
+<li class="chapter" data-level="2.7" data-path="2-rmd-basics.html"><a href="2-rmd-basics.html#additional-resources"><i class="fa fa-check"></i><b>2.7</b> Additional resources<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="3-math-sci.html"><a href="3-math-sci.html"><i class="fa fa-check"></i><b>3</b> Mathematics and Science<span></span></a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="3-math-sci.html"><a href="3-math-sci.html#math"><i class="fa fa-check"></i><b>3.1</b> Math<span></span></a></li>
+<li class="chapter" data-level="3.2" data-path="3-math-sci.html"><a href="3-math-sci.html#chemistry-101-symbols"><i class="fa fa-check"></i><b>3.2</b> Chemistry 101: Symbols<span></span></a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="3-math-sci.html"><a href="3-math-sci.html#typesetting-reactions"><i class="fa fa-check"></i><b>3.2.1</b> Typesetting reactions<span></span></a></li>
+<li class="chapter" data-level="3.2.2" data-path="3-math-sci.html"><a href="3-math-sci.html#other-examples-of-reactions"><i class="fa fa-check"></i><b>3.2.2</b> Other examples of reactions<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="3-math-sci.html"><a href="3-math-sci.html#physics"><i class="fa fa-check"></i><b>3.3</b> Physics<span></span></a></li>
+<li class="chapter" data-level="3.4" data-path="3-math-sci.html"><a href="3-math-sci.html#biology"><i class="fa fa-check"></i><b>3.4</b> Biology<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="4-ref-labels.html"><a href="4-ref-labels.html"><i class="fa fa-check"></i><b>4</b> Tables, Graphics, References, and Labels<span></span></a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="4-ref-labels.html"><a href="4-ref-labels.html#tables"><i class="fa fa-check"></i><b>4.1</b> Tables<span></span></a></li>
+<li class="chapter" data-level="4.2" data-path="4-ref-labels.html"><a href="4-ref-labels.html#figures"><i class="fa fa-check"></i><b>4.2</b> Figures<span></span></a></li>
+<li class="chapter" data-level="4.3" data-path="4-ref-labels.html"><a href="4-ref-labels.html#footnotes-and-endnotes"><i class="fa fa-check"></i><b>4.3</b> Footnotes and Endnotes<span></span></a></li>
+<li class="chapter" data-level="4.4" data-path="4-ref-labels.html"><a href="4-ref-labels.html#cross-referencing-chapters-and-sections"><i class="fa fa-check"></i><b>4.4</b> Cross-referencing chapters and sections<span></span></a></li>
+<li class="chapter" data-level="4.5" data-path="4-ref-labels.html"><a href="4-ref-labels.html#bibliographies"><i class="fa fa-check"></i><b>4.5</b> Bibliographies<span></span></a></li>
+<li class="chapter" data-level="4.6" data-path="4-ref-labels.html"><a href="4-ref-labels.html#anything-else"><i class="fa fa-check"></i><b>4.6</b> Anything else?<span></span></a></li>
+</ul></li>
+<li><a href="conclusion.html#conclusion">Conclusion<span></span></a></li>
+<li class="appendix"><span><b>Appendix<span></span></b></span></li>
+<li class="chapter" data-level="A" data-path="A-the-first-appendix.html"><a href="A-the-first-appendix.html"><i class="fa fa-check"></i><b>A</b> The First Appendix<span></span></a></li>
+<li class="chapter" data-level="B" data-path="B-the-second-appendix-for-fun.html"><a href="B-the-second-appendix-for-fun.html"><i class="fa fa-check"></i><b>B</b> The Second Appendix, for Fun<span></span></a></li>
+<li><a href="colophon.html#colophon">Colophon<span></span></a></li>
+<li><a href="references.html#references">References<span></span></a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">DISSERTATION TITLE IN ALL CAPS</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">DISSERTATION TITLE IN ALL CAPS</h1>
+<p class="author"><em>Author Full Name</em></p>
+<div class="abstract">
+<p class="abstract">Abstract</p>
+<p>Here is my abstract. <em>(350 word limit)</em></p>
+</div>
+</div>
+<div id="introduction" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">CHAPTER 1</span> Introduction<a href="index.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Editing text colors: Author may also use mostly black text as well. Redefine commands in unlthesis.cls with initials.</p>
+<p>Welcome to the <em>R Markdown</em> thesis template. This template is based on (and in many places copied directly from) the UW LaTeX template, and has been modified to use the UNL LaTeX thesis class maintained by the math department. Hopefully it will provide a nicer interface for those that have never used TeX or LaTeX before.</p>
+<p>Using <em>R Markdown</em> will also allow you to easily keep track of your analyses in <strong>R</strong> chunks of code, with the resulting plots and output included as well. The hope is this <em>R Markdown</em> template gets you in the habit of doing reproducible research, which benefits you long-term as a researcher, but also will greatly help anyone that is trying to reproduce or build onto your results down the road.</p>
+<p>Hopefully, you won’t have much of a learning period to go through and you will reap the benefits of a nicely formatted thesis. The use of LaTeX in combination with <em>Markdown</em> is more consistent than the output of a word processor, much less prone to corruption or crashing, and the resulting file is smaller than a Word file. While you may have never had problems using Word in the past, your thesis is likely going to be at least twice as large and complex as anything you’ve written before, taxing Word’s capabilities. After working with <em>Markdown</em> and <strong>R</strong> together for a few weeks, we are confident this will be your reporting style of choice going forward.</p>
+<!--  If you're still on the fence about using _R Markdown_, check out the resource for newbies available at <https://ismayc.github.io/rbasics-book/> .  -->
+<p><strong>Why use it?</strong></p>
+<p><em>R Markdown</em> creates a simple and straightforward way to interface with the beauty of LaTeX. Packages have been written in <strong>R</strong> to work directly with LaTeX to produce nicely formatting tables and paragraphs. In addition to creating a user friendly interface to LaTeX, <em>R Markdown</em> also allows you to read in your data, to analyze it and to visualize it using <strong>R</strong> functions, and also to provide the documentation and commentary on the results of your project. Further, it allows for <strong>R</strong> results to be passed inline to the commentary of your results. You’ll see more on this later.</p>
+<!--  Having your code and commentary all together in one place has a plethora of benefits! -->
+<p><strong>Who should use it?</strong></p>
+<p>Anyone who needs to use data analysis, math, tables, a lot of figures, complex cross-references, or who just cares about the final appearance of their document should use <em>R Markdown</em>. Of particular use should be anyone in the sciences, but the user-friendly nature of <em>Markdown</em> and its ability to keep track of and easily include figures, automatically generate a table of contents, index, references, table of figures, etc. should make it of great benefit to nearly anyone writing a thesis project.</p>
+
+<!--
+The {#rmd-basics} text after the chapter declaration will allow us to link throughout the document back to the beginning of Chapter 1.  These labels will automatically be generated (if not specified) by changing the spaces to hyphens and capital letters to lowercase.  Look for the reference to this label at the beginning of Chapter 2.
+-->
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="2-rmd-basics.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["thesis.pdf", "PDF"], ["thesis.epub", "EPUB"], ["thesis.docx", "Word"]],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section",
+"style": "style.css"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

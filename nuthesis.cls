@@ -747,10 +747,10 @@
 \newcommand{\nu@state}{Nebraska}
 \newcommand{\adviser}[1]{%
   \gdef\nu@adviser{#1}}
-\newcommand{\adviserAbstract}[1]{%
-  \gdef\nu@adviserAbstract{#1}}
+% \newcommand{\adviserAbstract}[1]{%
+%   \gdef\nu@adviserAbstract{#1}}
 \newcommand{\nu@adviser}{}
-\newcommand{\nu@adviserAbstract}{}
+% \newcommand{\nu@adviserAbstract}{}
 \newcommand{\degreemonth}[1]{%
   \gdef\nu@month{#1}}
 \newcommand{\nu@month}{}
@@ -863,7 +863,7 @@ Under the Supervision of \nu@adviser\\[3\baselineskip]
       \nu@university, \nu@year%
     \end{center}%
     \begin{flushleft}%
-      Adviser: \nu@adviserAbstract%
+      Adviser: \nu@adviser%
     \end{flushleft}%
   }{\par\end{doublespacing}\cleardoublepage}
 

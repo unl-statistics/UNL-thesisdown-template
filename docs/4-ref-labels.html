@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>CHAPTER 4 Tables, Graphics, References, and Labels | DISSERTATION TITLE IN ALL CAPS</title>
+  <meta name="description" content="CHAPTER 4 Tables, Graphics, References, and Labels | DISSERTATION TITLE IN ALL CAPS" />
+  <meta name="generator" content="bookdown 0.24.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="CHAPTER 4 Tables, Graphics, References, and Labels | DISSERTATION TITLE IN ALL CAPS" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="CHAPTER 4 Tables, Graphics, References, and Labels | DISSERTATION TITLE IN ALL CAPS" />
+  
+  
+  
+
+<meta name="author" content="Author Full Name" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="3-math-sci.html"/>
+<link rel="next" href="conclusion.html"/>
+<style type="text/css">
+p.abstract{
+  text-align: center;
+  font-weight: bold;
+}
+div.abstract{
+  margin: auto;
+  width: 90%;
+}
+</style>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./"></a></li>
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction<span></span></a></li>
+<li class="chapter" data-level="2" data-path="2-rmd-basics.html"><a href="2-rmd-basics.html"><i class="fa fa-check"></i><b>2</b> R Markdown Basics<span></span></a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="2-rmd-basics.html"><a href="2-rmd-basics.html#lists"><i class="fa fa-check"></i><b>2.1</b> Lists<span></span></a></li>
+<li class="chapter" data-level="2.2" data-path="2-rmd-basics.html"><a href="2-rmd-basics.html#line-breaks"><i class="fa fa-check"></i><b>2.2</b> Line breaks<span></span></a></li>
+<li class="chapter" data-level="2.3" data-path="2-rmd-basics.html"><a href="2-rmd-basics.html#r-chunks"><i class="fa fa-check"></i><b>2.3</b> R chunks<span></span></a></li>
+<li class="chapter" data-level="2.4" data-path="2-rmd-basics.html"><a href="2-rmd-basics.html#inline-code"><i class="fa fa-check"></i><b>2.4</b> Inline code<span></span></a></li>
+<li class="chapter" data-level="2.5" data-path="2-rmd-basics.html"><a href="2-rmd-basics.html#including-plots"><i class="fa fa-check"></i><b>2.5</b> Including plots<span></span></a></li>
+<li class="chapter" data-level="2.6" data-path="2-rmd-basics.html"><a href="2-rmd-basics.html#loading-and-exploring-data"><i class="fa fa-check"></i><b>2.6</b> Loading and exploring data<span></span></a></li>
+<li class="chapter" data-level="2.7" data-path="2-rmd-basics.html"><a href="2-rmd-basics.html#additional-resources"><i class="fa fa-check"></i><b>2.7</b> Additional resources<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="3-math-sci.html"><a href="3-math-sci.html"><i class="fa fa-check"></i><b>3</b> Mathematics and Science<span></span></a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="3-math-sci.html"><a href="3-math-sci.html#math"><i class="fa fa-check"></i><b>3.1</b> Math<span></span></a></li>
+<li class="chapter" data-level="3.2" data-path="3-math-sci.html"><a href="3-math-sci.html#chemistry-101-symbols"><i class="fa fa-check"></i><b>3.2</b> Chemistry 101: Symbols<span></span></a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="3-math-sci.html"><a href="3-math-sci.html#typesetting-reactions"><i class="fa fa-check"></i><b>3.2.1</b> Typesetting reactions<span></span></a></li>
+<li class="chapter" data-level="3.2.2" data-path="3-math-sci.html"><a href="3-math-sci.html#other-examples-of-reactions"><i class="fa fa-check"></i><b>3.2.2</b> Other examples of reactions<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="3-math-sci.html"><a href="3-math-sci.html#physics"><i class="fa fa-check"></i><b>3.3</b> Physics<span></span></a></li>
+<li class="chapter" data-level="3.4" data-path="3-math-sci.html"><a href="3-math-sci.html#biology"><i class="fa fa-check"></i><b>3.4</b> Biology<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="4-ref-labels.html"><a href="4-ref-labels.html"><i class="fa fa-check"></i><b>4</b> Tables, Graphics, References, and Labels<span></span></a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="4-ref-labels.html"><a href="4-ref-labels.html#tables"><i class="fa fa-check"></i><b>4.1</b> Tables<span></span></a></li>
+<li class="chapter" data-level="4.2" data-path="4-ref-labels.html"><a href="4-ref-labels.html#figures"><i class="fa fa-check"></i><b>4.2</b> Figures<span></span></a></li>
+<li class="chapter" data-level="4.3" data-path="4-ref-labels.html"><a href="4-ref-labels.html#footnotes-and-endnotes"><i class="fa fa-check"></i><b>4.3</b> Footnotes and Endnotes<span></span></a></li>
+<li class="chapter" data-level="4.4" data-path="4-ref-labels.html"><a href="4-ref-labels.html#cross-referencing-chapters-and-sections"><i class="fa fa-check"></i><b>4.4</b> Cross-referencing chapters and sections<span></span></a></li>
+<li class="chapter" data-level="4.5" data-path="4-ref-labels.html"><a href="4-ref-labels.html#bibliographies"><i class="fa fa-check"></i><b>4.5</b> Bibliographies<span></span></a></li>
+<li class="chapter" data-level="4.6" data-path="4-ref-labels.html"><a href="4-ref-labels.html#anything-else"><i class="fa fa-check"></i><b>4.6</b> Anything else?<span></span></a></li>
+</ul></li>
+<li><a href="conclusion.html#conclusion">Conclusion<span></span></a></li>
+<li class="appendix"><span><b>Appendix<span></span></b></span></li>
+<li class="chapter" data-level="A" data-path="A-the-first-appendix.html"><a href="A-the-first-appendix.html"><i class="fa fa-check"></i><b>A</b> The First Appendix<span></span></a></li>
+<li class="chapter" data-level="B" data-path="B-the-second-appendix-for-fun.html"><a href="B-the-second-appendix-for-fun.html"><i class="fa fa-check"></i><b>B</b> The Second Appendix, for Fun<span></span></a></li>
+<li><a href="colophon.html#colophon">Colophon<span></span></a></li>
+<li><a href="references.html#references">References<span></span></a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">DISSERTATION TITLE IN ALL CAPS</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="ref-labels" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">CHAPTER 4</span> Tables, Graphics, References, and Labels<a href="4-ref-labels.html#ref-labels" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="tables" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Tables<a href="4-ref-labels.html#tables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>By far the easiest way to present tables in your thesis is to store the contents of the table in a CSV or Excel file, then read that file in to your R Markdown document as a data frame. Then you can style the table with the <code>kable</code> function, or functions in the <a href="https://cran.r-project.org/web/packages/kableExtra/index.html">kableExtra</a> pacakge.</p>
+<p>In addition to the tables that can be automatically generated from a data frame in <strong>R</strong> that you saw in <a href="2-rmd-basics.html#rmd-basics">R Markdown Basics</a> using the <code>kable</code> function, you can also create tables using <em>pandoc</em>. (More information is available at <a href="http://pandoc.org/README.html#tables" class="uri">http://pandoc.org/README.html#tables</a>.) This might be useful if you don’t have values specifically stored in <strong>R</strong>, but you’d like to display them in table form. Below is an example. Pay careful attention to the alignment in the table and hyphens to create the rows and columns. Generally I don’t recommend this approach of typing the table directly into your R Markdown document.</p>
+<table>
+<caption><span id="tab:inher">Table 4.1: </span> Correlation of Inheritance Factors for Parents and Child</caption>
+<colgroup>
+<col width="31%" />
+<col width="50%" />
+<col width="18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Factors</th>
+<th align="center">Correlation between Parents &amp; Child</th>
+<th align="center">Inherited</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Education</td>
+<td align="center">-0.49</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="even">
+<td align="center">Socio-Economic Status</td>
+<td align="center">0.28</td>
+<td align="center">Slight</td>
+</tr>
+<tr class="odd">
+<td align="center">Income</td>
+<td align="center">0.08</td>
+<td align="center">No</td>
+</tr>
+<tr class="even">
+<td align="center">Family Size</td>
+<td align="center">0.18</td>
+<td align="center">Slight</td>
+</tr>
+<tr class="odd">
+<td align="center">Occupational Prestige</td>
+<td align="center">0.21</td>
+<td align="center">Slight</td>
+</tr>
+</tbody>
+</table>
+<p>We can also create a link to the table by doing the following: Table <a href="4-ref-labels.html#tab:inher">4.1</a>. If you go back to <a href="2-rmd-basics.html#loading-and-exploring-data">Loading and exploring data</a> and look at the <code>kable</code> table, we can create a reference to this max delays table too: Table <a href="2-rmd-basics.html#tab:maxdelays">2.1</a>. The addition of the <code>(\#tab:inher)</code> option to the end of the table caption allows us to then make a reference to Table <code>\@ref(tab:label)</code>. Note that this reference could appear anywhere throughout the document after the table has appeared.</p>
+<!-- We will next explore ways to create this label-ref link using figures. -->
+<!-- clearpage ends the page, and also dumps out all floats.
+  Floats are things like tables and figures. -->
+</div>
+<div id="figures" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Figures<a href="4-ref-labels.html#figures" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If your thesis has a lot of figures, <em>R Markdown</em> might behave better for you than that other word processor. One perk is that it will automatically number the figures accordingly in each chapter. You’ll also be able to create a label for each figure, add a caption, and then reference the figure in a way similar to what we saw with tables earlier. If you label your figures, you can move the figures around and <em>R Markdown</em> will automatically adjust the numbering for you. No need for you to remember! So that you don’t have to get too far into LaTeX to do this, a couple <strong>R</strong> functions have been created for you to assist. You’ll see their use below.</p>
+<!--
+One thing that may be annoying is the way _R Markdown_ handles "floats" like tables and figures (it's really \LaTeX's fault). \LaTeX\ will try to find the best place to put your object based on the text around it and until you're really, truly done writing you should just leave it where it lies. There are some optional arguments specified in the options parameter of the `label` function.  If you need to shift your figure around, it might be good to look here on tweaking the options argument:  <https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions>
+
+If you need a graphic or tabular material to be part of the text, you can just put it inline. If you need it to appear in the list of figures or tables, it should be placed in a code chunk.
+-->
+<p>In the <strong>R</strong> chunk below, we will load in a picture stored as <code>uw.png</code> in our main directory. We then give it the caption of “UW logo”, the label of “uwlogo”, and specify that this is a figure. Make note of the different <strong>R</strong> chunk options that are given in the R Markdown file (not shown in the knitted document).</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="4-ref-labels.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">include_graphics</span>(<span class="at">path =</span> <span class="st">&quot;figure/unl.png&quot;</span>)</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:uwlogo"></span>
+<img src="figure/unl.png" alt="logo" width="\linewidth" />
+<p class="caption">
+Figure 4.1: logo
+</p>
+</div>
+<p>Here is a reference to the UW logo: Figure <a href="4-ref-labels.html#fig:uwlogo">4.1</a>. Note the use of the <code>fig:</code> code here. By naming the <strong>R</strong> chunk that contains the figure, we can then reference that figure later as done in the first sentence here. We can also specify the caption for the figure via the R chunk option <code>fig.cap</code>.</p>
+<!-- starts a new page and stops trying to place floats such as tables and figures -->
+<p>Below we will investigate how to save the output of an <strong>R</strong> plot and label it in a way similar to that done above. Recall the <code>flights</code> dataset from Chapter <a href="2-rmd-basics.html#rmd-basics">2</a>. (Note that we’ve shown a different way to reference a section or chapter here.) We will next explore a bar graph with the mean flight departure delays by airline from Portland for 2014. Note also the use of the <code>scale</code> parameter which is discussed on the next page.</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="4-ref-labels.html#cb20-1" aria-hidden="true" tabindex="-1"></a>flights <span class="sc">%&gt;%</span></span>
+<span id="cb20-2"><a href="4-ref-labels.html#cb20-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(carrier) <span class="sc">%&gt;%</span></span>
+<span id="cb20-3"><a href="4-ref-labels.html#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">mean_dep_delay =</span> <span class="fu">mean</span>(dep_delay)) <span class="sc">%&gt;%</span></span>
+<span id="cb20-4"><a href="4-ref-labels.html#cb20-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> carrier, <span class="at">y =</span> mean_dep_delay)) <span class="sc">+</span></span>
+<span id="cb20-5"><a href="4-ref-labels.html#cb20-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>,</span>
+<span id="cb20-6"><a href="4-ref-labels.html#cb20-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">fill =</span> <span class="st">&quot;red&quot;</span>)</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:delaysboxplot"></span>
+<img src="thesis_files/figure-html/delaysboxplot-1.png" alt="Mean Delays by Airline" width="\linewidth" />
+<p class="caption">
+Figure 4.2: Mean Delays by Airline
+</p>
+</div>
+<p>Here is a reference to this image: Figure <a href="4-ref-labels.html#fig:delaysboxplot">4.2</a>.</p>
+<p>A table linking these carrier codes to airline names is available at <a href="https://github.com/ismayc/pnwflights14/blob/master/data/airlines.csv" class="uri">https://github.com/ismayc/pnwflights14/blob/master/data/airlines.csv</a>.</p>
+<p>Next, we will explore the use of the <code>out.extra</code> chunk option, which can be used to shrink or expand an image loaded from a file by specifying <code>"scale= "</code>. Here we use the mathematical graph stored in the “subdivision.pdf” file.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:subd"></span>
+<img src="figure/subdivision.pdf" alt="Subdiv. graph" width="\linewidth" scale=0.75 />
+<p class="caption">
+Figure 4.3: Subdiv. graph
+</p>
+</div>
+<p>Here is a reference to this image: Figure <a href="4-ref-labels.html#fig:subd">4.3</a>. Note that <code>echo=FALSE</code> is specified so that the <strong>R</strong> code is hidden in the document.</p>
+<p><strong>More Figure Stuff</strong></p>
+<p>Lastly, we will explore how to rotate and enlarge figures using the <code>out.extra</code> chunk option. (Currently this only works in the PDF version of the book.)</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:subd2"></span>
+<img src="figure/subdivision.pdf" alt="A Larger Figure, Flipped Upside Down" width="\linewidth" angle=180, scale=1.1 />
+<p class="caption">
+Figure 4.4: A Larger Figure, Flipped Upside Down
+</p>
+</div>
+<p>As another example, here is a reference: Figure <a href="4-ref-labels.html#fig:subd2">4.4</a>.</p>
+</div>
+<div id="footnotes-and-endnotes" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Footnotes and Endnotes<a href="4-ref-labels.html#footnotes-and-endnotes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>You might want to footnote something. <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> The footnote will be in a smaller font and placed appropriately. Endnotes work in much the same way.</p>
+</div>
+<div id="cross-referencing-chapters-and-sections" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Cross-referencing chapters and sections<a href="4-ref-labels.html#cross-referencing-chapters-and-sections" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The <a href="https://bookdown.org/yihui/bookdown/cross-references.html">bookdown documentation</a> is an excellent source for learning how to cross-reference in a bookdown project such as a huskydown document. Here we only cover the most common uses for a typical thesis. If you want something more complex or fancy, please refer to the bookdown documentation and seek help from the developers of that package.</p>
+<p>By default, all of your chapter and section headers will get an auto-generated ID label For example, e.g., <code># Chapter 1</code> will have an auto-generated ID <code>chapter-1</code>. Note that the ID label is all lower case, and has no spaces. If you have any kind of punctuation in your header, such as a colon (:), it will not appear in the ID label. Then in your text you can reference chapter one in your Rmd file like this: ‘as discussed in Chapter <code>\@ref(chapter-1)</code>’, which will print as ‘as discussed in Chapter 1’</p>
+<p>We strongly recommend that you to manually assign ID labels to your chapter header to make it easy to cross-reference. For example, at the top of the Rmd file for this chapter, you can see:</p>
+<p><code># Tables, Graphics, References, and Labels {#ref-labels}</code></p>
+<p>The <code>{#ref-labels}</code> part of this header is the ID label. It doesn’t show in the output, but is there for us to use for easy cross-referencing, because it can be short, and we don’t need to change it elsewhere our document when we update the chapter header. We can use this custom ID label in our Rmd document like this: ‘as discussed in Chapter <code>\@ref(ref-labels)</code>’, which will print as ‘as discussed in Chapter <a href="4-ref-labels.html#ref-labels">4</a>’. If you need to show custom text instead of the chapter number, you use this syntax in your Rmd document: <code>see [my chapter about labels](#ref-labels) for more details</code> which will appear as ‘see <a href="4-ref-labels.html#ref-labels">my chapter about labels</a> for more details’</p>
+<p>To cross-reference a specific section in the same chapter, we recommend adding a custom ID label to the section header, and using that to cross-reference. For example, earlier in this chapter we have a section on tables and in the Rmd file we see <code>## Tables {#tables}</code>. We can cross-reference that in the text like this ‘as discussed in the section on <code>[tables](#tables)</code>’ which will appear as ‘as discussed in the above section on <a href="4-ref-labels.html#tables">tables</a>’</p>
+<p>To cross-reference a section in a different chapter we can use the ID label from that section directly. For example, we can write in our Rmd document <code>as discussed in the section on [R code chunks](#r-chunks) in Chapter \@ref(rmd-basics)</code> which will appear as ‘as discussed in the section on <a href="2-rmd-basics.html#r-chunks">R code chunks</a> in Chapter <a href="2-rmd-basics.html#rmd-basics">2</a>’.</p>
+<p>If you prefer to cross-reference by the section number, we can use custom ID labels in our Rmd document. For example, to refer to a section in our first chapter, we can write in the Rmd document: <code>as discussed in section \@ref(r-chunks) in Chapter \@ref(rmd-basics)</code>. This will appear with section and chapter numbers like so: as ‘as discussed in section <a href="2-rmd-basics.html#r-chunks">2.3</a> in Chapter <a href="2-rmd-basics.html#rmd-basics">2</a>’.</p>
+</div>
+<div id="bibliographies" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> Bibliographies<a href="4-ref-labels.html#bibliographies" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Of course you will need to cite things, and you will probably accumulate an armful of sources. There are a variety of tools available for creating a bibliography database (stored with the .bib extension). In addition to BibTeX suggested below, you may want to consider using the free and easy-to-use tool called Zotero. Some Zotero documentation is at <a href="http://libguides.reed.edu/citation/zotero" class="uri">http://libguides.reed.edu/citation/zotero</a>. In addition, a tutorial is available from Middlebury College at <a href="http://sites.middlebury.edu/zoteromiddlebury/" class="uri">http://sites.middlebury.edu/zoteromiddlebury/</a>.</p>
+<p><em>R Markdown</em> uses <em>pandoc</em> (<a href="http://pandoc.org/" class="uri">http://pandoc.org/</a>) to build its bibliographies. One nice caveat of this is that you won’t have to do a second compile to load in references as standard LaTeX requires. To cite references in your thesis (after creating your bibliography database), place the reference name inside square brackets and precede it by the “at” symbol. For example, here’s a reference to a book about worrying: <span class="citation">(Molina &amp; Borkovec, 1994)</span>. This <code>Molina1994</code> entry appears in a file called <code>thesis.bib</code> in the <code>bib</code> folder. This bibliography database file was created by a program called BibTeX. You can call this file something else if you like (look at the YAML header in the main .Rmd file) and, by default, is to placed in the <code>bib</code> folder.</p>
+<p>For more information about BibTeX and bibliographies, see (<a href="http://web.reed.edu/cis/help/latex/index.html" class="uri">http://web.reed.edu/cis/help/latex/index.html</a>)<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. There are three pages on this topic: <em>bibtex</em> (which talks about using BibTeX, at <a href="http://web.reed.edu/cis/help/latex/bibtex.html" class="uri">http://web.reed.edu/cis/help/latex/bibtex.html</a>), <em>bibtexstyles</em> (about how to find and use the bibliography style that best suits your needs, at <a href="http://web.reed.edu/cis/help/latex/bibtexstyles.html" class="uri">http://web.reed.edu/cis/help/latex/bibtexstyles.html</a>) and <em>bibman</em> (which covers how to make and maintain a bibliography by hand, without BibTeX, at <a href="http://web.reed.edu/cis/help/latex/bibman.html" class="uri">http://web.reed.edu/cis/help/latex/bibman.html</a>). The last page will not be useful unless you have only a few sources.</p>
+<p>If you look at the YAML header at the top of the main .Rmd file you can see that we can specify the style of the bibliography by referencing the appropriate csl file. You can download a variety of different style files at <a href="https://www.zotero.org/styles" class="uri">https://www.zotero.org/styles</a>. Make sure to download the file into the csl folder.</p>
+<p><strong>Tips for Bibliographies</strong></p>
+<ul>
+<li>Like with thesis formatting, the sooner you start compiling your bibliography for something as large as thesis, the better.</li>
+<li>The cite key (a citation’s label) needs to be unique from the other entries.</li>
+<li>When you have more than one author or editor, you need to separate each author’s name by the word “and” e.g. <code>Author = {Noble, Sam and Youngberg, Jessica},</code>.</li>
+<li>Bibliographies made using BibTeX (whether manually or using a manager) accept LaTeX markup, so you can italicize and add symbols as necessary.</li>
+<li>To force capitalization in an article title or where all lowercase is generally used, bracket the capital letter in curly braces.</li>
+</ul>
+</div>
+<div id="anything-else" class="section level2 hasAnchor" number="4.6">
+<h2><span class="header-section-number">4.6</span> Anything else?<a href="4-ref-labels.html#anything-else" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If you’d like to see examples of other things in this template, please <a href="https://github.com/benmarwick/huskydown/issues/new">contact us</a> (email <a href="mailto:bmarwick@uw.edu" class="email">bmarwick@uw.edu</a>) with your suggestions. We love to see people using <em>R Markdown</em> for their theses, and are happy to help.</p>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>footnote text<a href="4-ref-labels.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p><span class="citation">Reed College (2007)</span><a href="4-ref-labels.html#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="3-math-sci.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="conclusion.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["thesis.pdf", "PDF"], ["thesis.epub", "EPUB"], ["thesis.docx", "Word"]],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section",
+"style": "style.css"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
